@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSU Food Errand Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SSU Food Errand Service</h1>
+    </header>
+
+    <nav>
+        <button id="aboutBtn">About</button>
+    </nav>
+
+    <section id="content">
+        <div id="about" class="hidden">
+            <p>This website helps SSU employees order food conveniently through department-specific services.</p>
+        </div>
+
+        <div id="departments">
+            <h2>Select Your Department</h2>
+            <button class="department-btn" data-department="CAS">CAS</button>
+            <button class="department-btn" data-department="CIT">CIT</button>
+            <button class="department-btn" data-department="COENG">COENG</button>
+            <button class="department-btn" data-department="COED">COED</button>
+            <button class="department-btn" data-department="CONHS">CONHS</button>
+        </div>
+
+        <div>
+            <h2>Choose Building</h2>
+            <button class="building-btn" data-building="1">NCAS</button>
+            <button class="building-btn" data-building="2">ACAD</button>
+        </div>
+
+        <div id="employee-list" class="hidden">
+            <h2>Employee List</h2>
+            <label for="floor-select">Select Floor:</label>
+            <select id="floor-select">
+                <option value="1">Floor 1</option>
+                <option value="2">Floor 2</option>
+            </select>
+            <ul id="employee-details"></ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

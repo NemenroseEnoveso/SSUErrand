@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ddbedc, #c449b5);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #c449b5, #ddbedc);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 12px 20px;
+    background-color: #eb44cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d338b5;
+    transform: scale(1.1);
+}
+
+/* Content Sections */
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+#about {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #eb44cc;
+    color: white;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Choose Building Section */
+#content > div {
+    margin: 20px 0;
+}
+
+#content > div h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.building-btn {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    background-color: #ddbedc;
+    color: #333;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.building-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #c449b5;
+    color: white;
+}
+
+
+/* Hidden Elements */
+.hidden {
+    display: none;
+}
+
+/* Departments Section */
+#departments h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.department-btn {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    background-color: #ddbedc;
+    color: #333;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.department-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Employee List */
+#employee-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#employee-list h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+#floor-select {
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#employee-details {
+    margin-top: 15px;
+    list-style: none;
+    padding-left: 0;
+}
+
+#employee-details li {
+    background: #ddbedc;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#employee-details li:hover {
+    background-color: #c449b5;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
